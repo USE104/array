@@ -78,6 +78,7 @@ lista2 = lista.filter(function(item){
 console.log(lista2)
 */
 
+/*
 
 const videoGames = [
     {nome: "Ps5", preco: 4500, fabricante: "Sony"},
@@ -91,3 +92,16 @@ console.log(videoGames.filter(function(p){
         return p
     }
 }))
+
+*/
+
+// Find faz a filtragem somente do primeiro que se enquadra na operação ex: <16 = 4 ou >16 = 45
+let lista = [45,4,9,16,25]
+let lista2 = []
+
+lista2 = lista.find(function (item){
+    if(item < 16 ){
+        return true
+    }
+})
+console.log(lista2)
